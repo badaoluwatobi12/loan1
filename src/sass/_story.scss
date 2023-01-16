@@ -38,11 +38,15 @@
                 align-content: center;
       
             }
-            
+
      
+            @media only screen and (max-width: $bp-small){
+                display: none;
+                  
+                    }
 
             @media only screen and (max-width: $bp-smaller){
-                width:70%;
+               display: none;
                  
                    }
 
@@ -64,6 +68,7 @@
 
             justify-items: center;
             align-content: center;
+            margin-top: -30rem;
          
         }
 

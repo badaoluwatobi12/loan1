@@ -3,7 +3,12 @@ import emailjs from '@emailjs/browser'
 import swal from 'sweetalert';
 import {BarLoader} from "react-spinners"
 import './main.scss'
-import dollar from "./img/dollar.jpeg";
+import one from "./img/one.jpg";
+import two from "./img/two.jpg";
+import three from "./img/three.jpg";
+import four from "./img/four.jpg";
+import five from "./img/five.jpg";
+import six from "./img/six.jpg";
 import advert from "./img/advert.jpg";
 import USlogo from "./img/USlogo.png";
 import bbc from "./img/logo-bbc.png";
@@ -48,6 +53,7 @@ export default function Main() {
  setDob("")
  setMethod("")
  setReason("")
+ setPrice("")
 
    
      }).catch(err=>{
@@ -159,6 +165,7 @@ export default function Main() {
 
          {/* story section  */}
     <div className='story__pictures'>
+
     <img src={advert} alt="" className='story__pictures--advert' /> 
     </div>
     <div className='story__content'>
@@ -175,7 +182,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
    {/* winings  */}
      <section className='winings'>
         <div className='wining'>
-         <img src={dollar} alt="" className='wining__img' />
+         <img src={one} alt="" className='wining__img' />
     
          <div className='wining__location'>
             <p>
@@ -185,7 +192,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
             </p>
          </div>
          <div className='wining__price'>
-            <p>$22,000</p>
+            <p>$1000,000.00</p>
          </div>
          <div className='wining__price'>
             <p>12 Nov 2022</p>
@@ -197,7 +204,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
           
 
         <div className='wining'>
-        <img src={dollar} alt="" className='wining__img' />
+        <img src={two} alt="" className='wining__img' />
     
          <div className='wining__location'>
             <p>(518) 425-0218
@@ -206,7 +213,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
             </p>
          </div>
          <div className='wining__price'>
-            <p>$20,000</p>
+            <p>$5,000.00</p>
          </div>
          <div className='wining__price'>
             <p>2 aug 1969</p>
@@ -218,7 +225,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 
 
         <div className='wining'>
-        <img src={dollar} alt="" className='wining__img' />
+        <img src={three} alt="" className='wining__img' />
         
          <div className='wining__location'>
             <p>(208) 548-2248
@@ -227,7 +234,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
             </p>
          </div>
          <div className='wining__price'>
-            <p>$10,000</p>
+            <p>$25,000.00</p>
          </div>
          <div className='wining__price'>
             <p>12 Nov 1987</p>
@@ -240,7 +247,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 
 
         <div className='wining'>
-        <img src={dollar} alt="" className='wining__img' />
+        <img src={four} alt="" className='wining__img' />
       
          <div className='wining__location'>
             <p>
@@ -250,7 +257,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
             </p>
          </div>
          <div className='wining__price'>
-            <p>$13,000</p>
+            <p>$20,000</p>
          </div>
          <div className='wining__price'>
             <p>12 jan 2022</p>
@@ -263,7 +270,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 
 
         <div className='wining'>
-        <img src={dollar} alt="" className='wining__img' />
+        <img src={six} alt="" className='wining__img' />
      
          <div className='wining__location'>
             <p>
@@ -273,7 +280,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
             </p>
          </div>
          <div className='wining__price'>
-            <p>$20,000</p>
+            <p>$10,000</p>
          </div>
          <div className='wining__price'>
             <p>5 Nov 2022</p>
@@ -286,7 +293,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 
 
         <div className='wining'>
-        <img src={dollar} alt="" className='wining__img' />
+        <img src={five} alt="" className='wining__img' />
    
          <div className='wining__location'>
             <p>
@@ -312,6 +319,7 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 {/* form */}
      <section className='form'>
      <div className='popup__shell'>
+     <h3 className='heading-3 formHead'>Apply</h3>
      <form action='#'  ref={form} onSubmit={sendEmail} className='popform'>
 {/* grant amount */}
 <div className='popform__group'>
