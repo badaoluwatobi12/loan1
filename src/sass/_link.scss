@@ -1,0 +1,21 @@
+.link{
+    color: red;
+    &:link,
+    &:visited{
+   
+        font-size: 2rem;
+        // position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+  
+  
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        line-height: 1;
+        cursor: pointer;
+  
+  
+    }
+  
+}

