@@ -1,16 +1,17 @@
 import React from 'react'
+import './main.scss'
 import { Route, Routes } from 'react-router-dom'
-import Chat from './component/Chat'
-import Contact from './component/Contact'
+import Main from './main'
+
 
 function App() {
   return (
-   <React.Fragment>
-       <Routes>
-          <Route path='/' element={<Chat/>} />
-          <Route path='/contact' element={<Contact/>} />
-       </Routes>
-   </React.Fragment>
+    <React.Fragment>
+    <Routes>
+       <Route path='/main' element={<Main/>} />
+    </Routes>
+</React.Fragment>
+
   )
 }
 
