@@ -13,6 +13,14 @@
     display: grid;
     align-content: center;
     justify-items: start;
+
+
+    @media only screen and (max-width: $bp-medium){
+
+      margin-top: 5rem;
+   
+  }
+
  
 
 }

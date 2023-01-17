@@ -17,6 +17,8 @@ import forbes from "./img/logo-forbes.png";
 import realtors1 from "./img/realtor-1.jpeg";
 import realtors2 from "./img/realtor-2.jpeg";
 import realtors3 from"./img/realtor-3.jpeg";
+import janet from"./img/janet.jpg";
+import joe from"./img/joe.jpg";
 
 
 
@@ -97,18 +99,18 @@ export default function Main() {
     <div className='realtors'>
     <h3 className='heading-3'>Approvals</h3>
       <div className='realtors__list'>
+      <img src={joe} alt='' className='realtors__img'/>
+     <h3 className='heading-3'> Joe Biden</h3>
+  
+      </div>
+      <div className='realtors__list'>
+      <img src={janet} alt='' className='realtors__img'/>
+     <h3 className='heading-3'> Janet yellen</h3>
+  
+      </div>
+      <div className='realtors__list'>
       <img src={realtors1} alt='' className='realtors__img'/>
-     <h3 className='heading-3'> Joe Biden</h3>
-  
-      </div>
-      <div className='realtors__list'>
-      <img src={realtors2} alt='' className='realtors__img'/>
-     <h3 className='heading-3'> Joe Biden</h3>
-  
-      </div>
-      <div className='realtors__list'>
-      <img src={realtors3} alt='' className='realtors__img'/>
-     <h3 className='heading-3'> Joe Biden</h3>
+     <h3 className='heading-3'> Dan Simon</h3>
   
       </div>
    
@@ -174,7 +176,7 @@ export default function Main() {
  
 THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAKE RESOURCES AVAILABLE TO MEMBERS EXPERIENCING BALANCE OF PAYMENTS DIFFICULTIES AROUND THE WORLD. OUR OFFICIAL GOAL IS THE REDUCTION OF POVERTY WITH PASSION AND PROFESSIONALISM. THIS PROGRAM IS A WORLDWIDE PROMOTIONAL TOUR EMBARKED ON FOR THE YOUNG & OLD PEOPLE WHO ARE FULL AND PART-TIME WORKERS, UNEMPLOYED DISABLED, RETIRED, SEMI-RETIRED
      </p>
-     <button className='btn'>Find your home</button>
+     <button className='btn'>Find out</button>
      </div>
 
 

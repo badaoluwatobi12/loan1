@@ -13,11 +13,38 @@
 
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-items: center;
-    @media only screen and (max-width: $bp-small){
+
+    @media only screen and (max-width: $bp-large){
+        grid-column: 1 / -1;   
+        padding: 1rem;
+       }
+     
+      
+
+    @media only screen and (max-width: $bp-mediumer){
         grid-column: 1 / -1;
         padding: 1rem;
-     
-       }
+      }
+    
+
+   @media only screen and (max-width: $bp-medium){
+    grid-column: 1 / -1;
+    padding: 1rem;
+   }
+
+
+   @media only screen and (max-width: $bp-small){
+    grid-column: 1 / -1;
+    padding: 1rem;
+ 
+   }
+
+   @media only screen and (max-width: $bp-smaller){
+    grid-column: 1 / -1;
+    padding: 1rem;
+        
+          }
+
 }
 
 
