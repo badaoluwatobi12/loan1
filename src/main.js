@@ -30,7 +30,6 @@ export default function Main() {
    const[email,setEmail]=useState("")
    const[phone,setPhone]=useState("")
    const[address,setAddress]=useState("")
-   const[dob,setDob]=useState("")
    const[method,setMethod]=useState("")
    const[reason,setReason]=useState("")
    const[price,setPrice]=useState("")
@@ -42,8 +41,8 @@ export default function Main() {
       e.preventDefault();
       console.log(form)
     setLoader(true)
- if (firstname&&lastname&&email&&phone&&address&&dob&&method&&reason&&price) {
- emailjs.sendForm("service_mc33p8e", "template_pjqdnwb", form.current, "NBfXFPxY5-jRL1yVx").then(res=>{
+ if (firstname&&lastname&&email&&phone&&address&&method&&reason&&price) {
+ emailjs.sendForm("service_t9byzmo", "template_5p3pp8r", form.current, "7mWpUdMAwpE1TFiAn").then(res=>{
    console.log(res)
    setLoader(false)
  swal(`Hi ${lastname},`, "Keep Checking Email", "success");
@@ -52,7 +51,6 @@ export default function Main() {
  setEmail("")
  setPhone("")
  setAddress("")
- setDob("")
  setMethod("")
  setReason("")
  setPrice("")
@@ -327,39 +325,27 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 <div className='popform__group'>
 <BarLoader loading={loader} color="#36d7b7" className='w-100' />
 <label for="price" className='popform__label'>$0-100000 Amount</label>
-<input type="text" name='price' className="popform__input"  placeholder="Input amount"  value={price} onChange={(e)=>setPrice(e.target.value)} required/>
+<input type="text" name='price' className="popform__input"  placeholder="$"  value={price} onChange={(e)=>setPrice(e.target.value)} required/>
   </div>
 
 
 {/* lastname */}
     <div className='popform__group'>
 <label for="lastname" className='popform__label'>Lastname</label>
-<input type="text" name='lastname' className="popform__input" placeholder="lastname"  value={lastname} onChange={(e)=>setLastname(e.target.value)} required/>
+<input type="text" name='lastname' className="popform__input" placeholder="Lastname"  value={lastname} onChange={(e)=>setLastname(e.target.value)} required/>
   </div>
   
   {/* firstname */}
   <div className="popform__group">
 <label for="firstname" className='popform__label'>Firstname</label>
-<input type="text" name='firstname' className="popform__input"  placeholder="firstname"  value={firstname} onChange={(e)=>setFirstname(e.target.value)} required/>
+<input type="text" name='firstname' className="popform__input"  placeholder="Firstname"  value={firstname} onChange={(e)=>setFirstname(e.target.value)} required/>
   </div>
 
-{/* address */}
-  <div className='popform__group'>
-<label for="address" className='popform__label'>Home/Delivery Address</label>
-<input type="text" name='address' className="popform__input"  placeholder="Home/Delivery Address"  value={address} onChange={(e)=>setAddress(e.target.value)} required/>
-  </div>
-
-
-{/* date of birth */}
-  <div className='popform__group'>
-<label for="dob" className='popform__label'>Date of birth</label>
-<input type="text" name='dob' className="popform__input" placeholder="Date Of Birth"  value={dob} onChange={(e)=>setDob(e.target.value)} required/>
-  </div>
 
    {/* email    */}
    <div className='popform__group'>
 <label for="email" className='popform__label'>Email Address</label>
-<input type="text" name='email' className="popform__input"  placeholder="email"  value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+<input type="text" name='email' className="popform__input"  placeholder="Email"  value={email} onChange={(e)=>setEmail(e.target.value)} required/>
   </div>
  
  {/* phone */}
@@ -367,6 +353,13 @@ THE PROGRAM OFFERS BUSINESS OPPORTUNITY, FOSTER SUSTAINABLE ECONOMIC GROWTH, MAK
 <label for="phone" className='popform__label'>Phone Number</label>
 <input type="tel" name='phone' className="popform__input" placeholder="+1 (234) 456-7890"  value={phone} onChange={(e)=>setPhone(e.target.value)} required/>
   </div>
+
+  {/* address */}
+  <div className='popform__group'>
+<label for="address" className='popform__label'>Home/Delivery Address</label>
+<input type="text" name='address' className="popform__input"  placeholder="Home/DeliveryAddress"  value={address} onChange={(e)=>setAddress(e.target.value)} required/>
+  </div>
+
 
    {/*reason   */}
    <div className='popform__group'>
